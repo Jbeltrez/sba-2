@@ -42,6 +42,7 @@
     .verified {
       font-size: 14px;
       color: hsl(210, 2%, 80%);
+      grid-area: verified;
     }
     .review {
       font-size: 1.5em;
@@ -95,14 +96,29 @@
     }
     .test-5 {
       /* grid-area: test-5; */
-      background-color: hsl(219, 29%, 14%)
+      background-color: hsl(219, 29%, 14%);
+      height: auto;
+
     }
     .pic {
       border-radius: 50%;
+      grid-area: pic;
     }
     .container {
         height: 800px;
     }
+    .name {
+        grid-area: name;
+
+    }
+
+    .profile {
+        display: grid;
+        grid-template-areas:
+        "pic" 
+        "pic" 
+    }
+    
    
 
   
@@ -110,14 +126,40 @@
   </style>
 </head>
 <body>
-    <a href="home.html">HomePage</a>
-    <div class="container overflow-hidden">
+    <div>
+    
+            <h1>This Page made with Bootstrap, Plain Css version linked below</h1>
+            <a href="home.html">HomePage</a>
+    </div>
+    
+    <div class="container">
         <div class="row">
             <div class="col-sm-9 col-md-9 col-lg-9">
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="test test-1">
-                            <img src="image-daniel.jpg" alt="daniel" class="pic">
+                            <div class="profile">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="image-daniel.jpg" alt="daniel" class="pic">
+
+                                        
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <p class="name">Daniel Clifford</p>
+
+                                        </div>
+                                        <div class="row">
+                                            <p class="verified">Verified Candidate</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                           
                             <p class="review"> I received a job offer mid-course, and the subjects I learned were current, if not more so, 
                               in the company I joined. I honestly feel I got every penny’s worth.</p>
                             <p class="para"> “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
@@ -130,7 +172,27 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="test test-2">
-                            <img class="pic" src="image-jonathan.jpg" alt="Jonathan">
+                            <div class="profile">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="pic" src="image-jonathan.jpg" alt="Jonathan">
+
+                                        
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <p class="name">Jonathan Walters</p>
+
+                                        </div>
+                                        <div class="row">
+                                            <p class="verified">Verified Candidate</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
                             <p class="review">The team was very supportive and kept me motivated</p>
                             <p class="para">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
                               for a big company. This was one of the best investments I’ve made in myself. ”</p>
@@ -143,8 +205,28 @@
                 </div>
                 <div class="row gy-2">
                     <div class="col-sm-4">
-                        <div class="test test-4">
-                            <img class="pic" src="image-jeanette.jpg" alt="Jeanette">
+                        <div class="test test-4" style="height: 100%;">
+                            <div class="profile">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="pic" src="image-jeanette.jpg" alt="Jeanette">
+
+                                        
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <p class="name">Jeanette Harmon</p>
+
+                                        </div>
+                                        <div class="row">
+                                            <p class="verified">Verified Candidate</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>                            
                             <p class="review">An overall wonderful and rewarding experience</p>
                             <p class="para">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
                               while doing something I love. ”</p>
@@ -153,8 +235,28 @@
 
                     </div>
                     <div class="col-sm-8">
-                        <div class="test test-5">
-                            <img class="pic" src="image-patrick.jpg" alt="Patrick">
+                        <div class="test test-5" style="height: 100%;">
+                            <div class="profile">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img class="pic" src="image-patrick.jpg" alt="Patrick">
+
+                                        
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row">
+                                            <p class="name" style="color: hsl(0, 0%, 70%);">Patrick Abrams</p>
+
+                                        </div>
+                                        <div class="row">
+                                            <p class="verified">Verified Candidate</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
                             <div class="review">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
                               learning from their experiences was easy.</div>
                             <div class="para">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
@@ -171,8 +273,28 @@
 
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <div class="test test-3">
-                    <img class="pic" src="image-kira.jpg" alt="Kira">
+                <div class="test test-3" style="height: 100%;">
+                    <div class="profile">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="pic" src="image-kira.jpg" alt="Kira">
+
+                                
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <p class="name">Kira Whittle</p>
+
+                                </div>
+                                <div class="row">
+                                    <p class="verified">Verified Candidate</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
                     <p class="review">Such a life-changing experience. Highly recommended!</p>
                     <p class="para">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
                                 professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
